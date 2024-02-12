@@ -367,7 +367,7 @@
     <!-- ===========         SIDEBAR        =========== -->
     <!-- ============================================== -->
 
-    <div
+    <div *ngIf =" !settingsButtons['showFreq'].hidden ">
       class="sidebar"
       [ngClass]="{
           'sidebar-hidden': settingsButtons['hideSidebar'].toggled,
